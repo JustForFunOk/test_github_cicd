@@ -1,5 +1,7 @@
 # test cicd on github
 
+![Build Status](https://github.com/JustForFunOk/test_github_cicd/actions/workflows/bazel_build.yml/badge.svg)
+
 ## github workflow
 
 1. https://github.com/msusdev/end-to-end-github-actions
