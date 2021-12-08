@@ -11,14 +11,16 @@ jobs:
       - name: 'Bazel build stage1'
         run: cd cpp-tutorial/stage1 && bazel build //main:hello-world
       - name: 'Bazel run stage1'
-        run: bazel run //main:hello-world
+        run: cd cpp-tutorial/stage1 && bazel run //main:hello-world
+
       - name: 'Bazel build stage2'
-        run: cd ../stage1 && bazel build //main:hello-world
+        run: cd cpp-tutorial/stage2 && bazel build //main:hello-world
+
       - name: 'Bazel build stage3'
-        run: cd ../stage1 && bazel build //main:hello-world
+        run: cd cpp-tutorial/stage3 && bazel build //main:hello-world
 
       - name: 'Bazel build third-party-dependencies'
-        run: cd ../../third-party-dependencies && bazel build //:hello-world
+        run: cd third-party-dependencies && bazel build //:hello-world
 
       - name: 'Bazel test third-party-dependencies'
-        run: bazel test //:all --test_output=streamed
+        run: cd third-party-dependencies && bazel test //:all --test_output=streamed
