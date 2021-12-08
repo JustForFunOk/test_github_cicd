@@ -20,3 +20,9 @@ You can directly use action in jobs, just like call function in code.
 ## reference
 
 1. https://dev.to/davidb31/experimentations-on-bazel-github-action-5639
+
+---
+
+## Status Badge
+
+1. https://docs.github.com/cn/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge
