@@ -20,7 +20,7 @@ jobs:
         run: cd cpp-tutorial/stage3 && bazel build //main:hello-world
 
       - name: 'Bazel build third-party-dependencies'
-        run: cd third-party-dependencies && bazel build //:hello-world
+        run: cd third-party-dependencies && bazel build //:hello_world
 
       - name: 'Bazel test third-party-dependencies'
         run: cd third-party-dependencies && bazel test //:all --test_output=streamed
