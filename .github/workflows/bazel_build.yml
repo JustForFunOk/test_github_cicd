@@ -8,6 +8,9 @@ jobs:
       - name: 'Checkout Code onto runner'
         uses: actions/checkout@v2 # https://github.com/marketplace/actions/checkout
 
+      - name: 'System Bazel version'
+        run: bazel --version
+
       - name: 'Bazel build stage1'
         run: cd cpp-tutorial/stage1 && bazel build //main:hello-world
       - name: 'Bazel run stage1'
@@ -20,7 +23,7 @@ jobs:
         run: cd cpp-tutorial/stage3 && bazel build //main:hello-world
 
       - name: 'Bazel build third-party-dependencies'
-        run: cd third-party-dependencies && bazel build //:hello_world
+        run: cd third-party-dependencies && bazel build //:hello_world && bazel --version
 
       - name: 'Bazel test third-party-dependencies'
         run: cd third-party-dependencies && bazel test //:all --test_output=streamed
