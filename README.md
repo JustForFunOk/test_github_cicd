@@ -26,3 +26,7 @@ You can directly use action in jobs, just like call function in code.
 ## Status Badge
 
 1. https://docs.github.com/cn/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge
+
+## use emoji in commit message
+
+1. https://gitmoji.dev
